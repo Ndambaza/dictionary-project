@@ -30,6 +30,7 @@ export default function Dictionary() {
           onChange={handleKeywordChange}
           placeholder="Search for a word..."
         />
+        <button type="submit">Search</button>
       </form>
       <Results results={results} />
     </div>
