@@ -45,23 +45,7 @@
   margin: 0 0 6px 0;
 }
 
-/* Phonetic */
-.Phonetic {
-  font-size: 14px;
-  color: #555;
-  margin: 8px 0;
-}
 
-.Phonetic a {
-  color: #111;
-  text-decoration: none;
-  margin-right: 8px;
-  font-weight: bold;
-}
-
-.Phonetic a:hover {
-  text-decoration: underline;
-}
 
 /* Meaning / Definitions */
 .Meaning {
@@ -78,14 +62,6 @@
   font-weight: bold;
   text-transform: lowercase;
   margin: 0 0 12px 0;
-}
-
-.definition-card {
-  background: white;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 12px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .Meaning p {
@@ -119,4 +95,42 @@
   padding: 3px 8px;
   border-radius: 4px;
   font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Dictionary {
+    padding: 15px;
+  }
+  
+  .Results {
+    padding: 15px;
+  }
+  
+  .Dictionary button {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Dictionary {
+    padding: 12px;
+  }
+  
+  .Dictionary form {
+    flex-direction: column;
+  }
+  
+  .Dictionary button {
+    width: 100%;
+  }
+  
+  .Results {
+    padding: 12px;
+  }
+  
+  .Results h2 {
+    font-size: 18px;
+  }
 }

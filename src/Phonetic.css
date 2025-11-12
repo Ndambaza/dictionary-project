@@ -1,0 +1,17 @@
+/* Phonetic */
+.Phonetic {
+  font-size: 14px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.Phonetic a {
+  color: #111;
+  text-decoration: none;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.Phonetic a:hover {
+  text-decoration: underline;
+}

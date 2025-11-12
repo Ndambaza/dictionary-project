@@ -13,6 +13,19 @@ body {
   justify-content: center;
 }
 
+/* Responsive padding */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+}
+
 .container {
   width: 700px;
   display: flex;

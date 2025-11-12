@@ -1,12 +1,17 @@
 import React from "react";
 import Synonyms from "./Synonyms";
+import "./Meaning.css";
 
 export default function Meaning(props) {
   console.log(props.meaning);
+  
+  // Limit definitions to 4
+  const limitedDefinitions = props.meaning.definitions.slice(0, 4);
+  
   return (
     <div className="Meaning">
       <h3>{props.meaning.partOfSpeech}</h3>
-      {props.meaning.definitions.map(function (definition, index) {
+      {limitedDefinitions.map(function (definition, index) {
         return (
           <div key={index} className="definition-card">
             <p>
